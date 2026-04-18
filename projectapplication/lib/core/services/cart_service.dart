@@ -68,9 +68,4 @@ class CartService extends ChangeNotifier {
     _items.removeWhere((item) => item.key == itemKey);
     notifyListeners();
   }
-
-  void clearCart() {
-    _items.clear();
-    notifyListeners();
-  }
 }

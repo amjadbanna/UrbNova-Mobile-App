@@ -13,8 +13,6 @@ class WishlistService extends ChangeNotifier {
   // Returns a read-only copy of the wishlist
   List<ProductModel> get items => List.unmodifiable(_items);
 
-  int get count => _items.length;
-
   // Check if a product is already in the wishlist
   bool isInWishlist(int productId) =>
       _items.any((p) => p.id == productId);
